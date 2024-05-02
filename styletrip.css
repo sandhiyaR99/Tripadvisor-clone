@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+head,
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header,
+.title,
+.select,
+.details,
+.currency{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+header{
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.user,.bar{
+    display: none;
+}
+title h1 {
+    font-size: 40px;
+}
+.logo{
+    border-radius: 100px;
+    height: 50px;
+}
+.select button,
+.signin {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-style: none;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+.select button {
+    background-color: white;
+}
+.select button:hover {
+    background-color: #F0F0F0;
+}
+.signin {
+    background-color: black;
+    color: white;
+}
+.head{
+    font-size: 60px;
+    text-align: center;
+    margin: 36px 0px 0px 0px;   
+}
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 34px 0px 16px 0px;
+    font-weight:600;
+}
+.options button{
+    border-style: none;
+    background-color: white;
+    border-bottom: 2px black solid;
+    font-weight: bolder;
+    padding-bottom: 8px;
+}
+.options button:hover,.options a:hover{
+    padding-bottom: 8px;
+    cursor: pointer;
+    color: gray;
+    border-bottom: gray 2px solid;
+}
+.search__bar__input{
+    border-style: none;
+    width: 80%;
+    margin-left: 5px;
+}
+.search__bar__input:focus{
+    outline: none;
+}
+.search__bar{
+    border: 1px lightgray solid;
+    width: 35%;
+    padding: 12px 12px 12px 20px;
+    border-radius: 25px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.search__button{
+    padding: 14px 20px;
+    border-radius: 25px;
+    border-style: none;
+    background-color:#34E0A1;
+    font-weight: bold;
+    cursor: pointer;
+}
+.AI img{
+    width: 100%;
+    border-radius: 30px;
+}
+.AI{
+    text-align: center;
+    margin-top: 50px;
+}
+.stay,.top,.park,.explore,.nexttrip,.holiday,.rentals,footer{
+    margin-top: 50px;
+}
+.stay p,.top p,.park p,.nexttrip p,.holiday p{
+    margin: 10px 0px;
+}
+.stay__card,.top__card,.park__card,.explore__card,.nexttrip__card,.holiday__card,.rentals__card{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    cursor: pointer;
+}
+.stay__card__img,.nexttrip__card__img,.holiday__card__img{
+    position: relative;
+}
+.stay__card__img h1,.nexttrip__card__img h1,.holiday__card__img h1{
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    color: white;
+    background-color: transparent;
+}
+.stay__card img,.top__card__img img ,.park__card__img img,.explore__card__img img,.nexttrip__card img,.holiday__card img,.rentals__card img{
+    width: 250px; 
+    height: 250px;
+    border-radius: 10px;
+}
+.rentals__desc h3{
+    padding: 10px;
+}
+.rentals__desc{
+    display: flex;
+}
+.explore,footer{
+    background-color:#FFF7E1;
+    margin-left: -12%;
+    margin-right: -12%;
+    padding: 40px 60px;
+}
+.explore h2{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: #FAF1ED;
+}
+.footeroptions{
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+}
+.footeroptions__head{
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.footeroptions__head p{
+    font-weight: bold;
+}
+.terms{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.terms__details h4{
+    display: inline-block;
+    margin: 5px 20px;
+    border-bottom: 1px black solid;
+}
+.terms__currency button{
+    padding: 10px 40px;
+border-radius: 50px;
+}
+.end{
+    padding-top: 20px;
+}
+
+/* media queries */
+
+@media screen and (max-width:700px){
+    body{
+        font-size: 13px;
+    }
+    .select,.currency,.head,.footeroptions__desc,.terms__currency,.terms__details h4,.signin{
+        display: none;
+    }
+    .bar{
+        display: inline;
+    }
+    .header{
+        justify-content: space-around;
+    }
+    .rentals__desc,.footeroptions{
+        display: block;
+    }
+    .logo{
+        height: 20px;
+    }
+    .bar,.user{
+        display: block;
+    }
+    .options{
+        overflow-x: auto;
+    }
+    .search__bar,.search__button{
+        padding: 7px 5px;
+    }
+}
+
