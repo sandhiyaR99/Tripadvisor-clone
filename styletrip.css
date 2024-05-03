@@ -270,5 +270,8 @@ footer{
     .selectoption select{
             width: 80%;
     }
+    .copy,.version{
+        font-size: 10px;
+    }
 }
 
