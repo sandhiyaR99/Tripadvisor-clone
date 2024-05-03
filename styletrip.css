@@ -54,8 +54,8 @@ title h1 {
 }
 /* main */
 main{
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
 } 
 .head{
     font-size: 60px;
@@ -99,7 +99,6 @@ main{
 }
 .search{
     display: flex;
-    flex-wrap: ;
     justify-content: center;
     gap: 5px;
 }
@@ -158,9 +157,9 @@ main{
 .rentals__desc{
     display: flex;
 }
-.explore,footer{
+.explore{
     background-color:#FAF1ED;
-    padding: 32px 60px 60px 60px;
+    padding: 50px 20px;
 }
 .explore h2{
     margin-bottom: 20px;
@@ -173,9 +172,13 @@ main{
 footer{
     font-size: 14px;
 }
+footer{
+    background-color:#FAF1ED;
+    padding: 3% 8%;
+}
 .section1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
 }
 .section2{
