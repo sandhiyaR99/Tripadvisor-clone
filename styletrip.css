@@ -226,6 +226,7 @@ footer{
 @media screen and (max-width:700px){
     body{
         font-size: 12px;
+        margin-right: -20px;
     }
     .select,.currency,.head,.terms__currency,.terms__details h4,.signin,.footeroptions1__desc,.footeroptions2__desc{
         display: none;
@@ -244,7 +245,7 @@ footer{
     }
     .options{
         overflow-x: auto;
-        justify-content: center;
+        margin-left: -10px;
     }
     .search{
         display: inline-block;
