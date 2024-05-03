@@ -6,11 +6,6 @@ head,
 body {
     font-family: "IBM Plex Sans", sans-serif;
 }
-
-.search,.AI,.stay,.top,.park,.nexttrip,.holiday,.rentals{
-    margin: 0px 42px 0px 42px;
-    padding: 0px 24px;
-} 
 header,
 .title,
 .select,
@@ -58,6 +53,10 @@ title h1 {
     color: white;
 }
 /* main */
+main{
+    margin-left: 3%;
+    margin-right: 3%;
+} 
 .head{
     font-size: 60px;
     text-align: center;
@@ -100,6 +99,7 @@ title h1 {
 }
 .search{
     display: flex;
+    flex-wrap: ;
     justify-content: center;
     gap: 5px;
 }
@@ -225,8 +225,7 @@ footer{
 
 @media screen and (max-width:700px){
     body{
-        font-size: 12px;
-        margin-right: -20px;
+        font-size: 14px;
     }
     .select,.currency,.head,.terms__currency,.terms__details h4,.signin,.footeroptions1__desc,.footeroptions2__desc{
         display: none;
@@ -245,17 +244,16 @@ footer{
     }
     .options{
         overflow-x: auto;
-        margin-left: -10px;
     }
     .search{
         display: inline-block;
         width: 100%;
     }
     .search__bar{
-        width: 100%;  
+        width: 95%;  
     }
     .search__button{
-        width: 105%;
+        width: 103%;
     }
     .footeroptions1__head:hover .footeroptions1__desc, .footeroptions2__head:hover .footeroptions2__desc{
         display: block;
