@@ -252,10 +252,10 @@ footer{
         width: 100%;
     }
     .search__bar{
-        width: 70%;  
+        width: 100%;  
     }
     .search__button{
-        width: 77%;
+        width: 105%;
     }
     .footeroptions1__head:hover .footeroptions1__desc, .footeroptions2__head:hover .footeroptions2__desc{
         display: block;
